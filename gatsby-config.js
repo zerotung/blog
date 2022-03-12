@@ -12,16 +12,20 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        "icon": "src/images/icon.png"
+        "icon": "static/images/icon.png"
       }
     },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
+      resolve: 'gatsby-transformer-remark',
+      options: {}
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         "name": "images",
-        "path": "./src/images/"
+        "path": "./static/images/"
       },
       __key: "images"
     }, {
